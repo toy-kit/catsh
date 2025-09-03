@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4976092 */
+  src: url('iconfont.woff2?t=1754463712126') format('woff2'),
+       url('iconfont.woff?t=1754463712126') format('woff'),
+       url('iconfont.ttf?t=1754463712126') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e790";
+}
+
+.icon-windows-close:before {
+  content: "\e639";
+}
+
+.icon-windows-maximize:before {
+  content: "\e653";
+}
+
+.icon-windows-minimize:before {
+  content: "\e650";
+}
+
+.icon-windows-unmaximize:before {
+  content: "\e65b";
+}
+
+.icon-down:before {
+  content: "\e703";
+}
+
+.icon-run:before {
+  content: "\e7dc";
+}
+
+.icon-up:before {
+  content: "\e61d";
+}
+
+.icon-biaoti:before {
+  content: "\e62b";
+}
+
+.icon-scroll:before {
+  content: "\e652";
+}
+
+.icon-minimize:before {
+  content: "\e67a";
+}
+
+.icon-text:before {
+  content: "\e649";
+}
+
+.icon-maximize:before {
+  content: "\e600";
+}
+
+.icon-target:before {
+  content: "\e77e";
+}
+
+.icon-copy:before {
+  content: "\ec7a";
+}
+
+.icon-screenshot:before {
+  content: "\e628";
+}
+
+.icon-smoot:before {
+  content: "\e612";
+}
+
+.icon-paste:before {
+  content: "\e63f";
+}
+
+.icon-jihuo:before {
+  content: "\e61e";
+}
+
+.icon-close:before {
+  content: "\e613";
+}
+
+.icon-read_clipboard:before {
+  content: "\e658";
+}
+
+.icon-write_clipboard:before {
+  content: "\e659";
+}
+
+.icon-printscreen:before {
+  content: "\ec10";
+}
+
+.icon-drag:before {
+  content: "\e6ad";
+}
+
+.icon-tap:before {
+  content: "\e797";
+}
+
+.icon-doubleclick:before {
+  content: "\e65a";
+}
+
+.icon-logo:before {
+  content: "\e6b3";
+}
+
+.icon-title:before {
+  content: "\e6e2";
+}
+
+.icon-active:before {
+  content: "\e619";
+}
+
+.icon-input:before {
+  content: "\e648";
+}
+
+.icon-clear:before {
+  content: "\e699";
+}
+
+.icon-coord:before {
+  content: "\e769";
+}
+
+.icon-window:before {
+  content: "\e616";
+}
+
+.icon-click:before {
+  content: "\e655";
+}
+
+.icon-sleep:before {
+  content: "\e629";
+}
+
+.icon-keyboard:before {
+  content: "\e618";
+}
+
+.icon-move:before {
+  content: "\e617";
+}
+
+.icon-screen:before {
+  content: "\e90b";
+}
+
+.icon-mouse:before {
+  content: "\e6bd";
+}
+

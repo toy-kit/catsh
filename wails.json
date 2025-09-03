@@ -1,0 +1,22 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "Catsh",
+  "outputfilename": "Catsh",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "lufuhu",
+    "email": "tk@lufuhu.com"
+  },
+  "repository": "https://github.com/toy-kit/catsh",
+  "homepage": "http://tk.lufuhu.com/catsh/",
+  "info": {
+    "companyName": "toy-kit",
+    "productName": "Catsh",
+    "productVersion": "0.0.1",
+    "copyright": "Copyright © 2025 LUFUHU TOY-KIT",
+    "comments": ""
+  }
+}

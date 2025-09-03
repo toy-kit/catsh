@@ -1,0 +1,34 @@
+{
+    "title": "Catsh",
+    "description": "桌面自动化程序，控制键盘、鼠标、位图、图像、读取屏幕，进程、窗口句柄以及全局事件监听。",
+    "titlebar": {
+        "setting": "设置",
+        "minimise": "最小化",
+        "maximize": "最大化",
+        "close": "关闭",
+        "language": "语言",
+        "theme": "主题",
+        "light": "亮色模式",
+        "dark": "暗黑模式",
+        "help": "帮助",
+        "docs": "文档",
+        "repository": "仓库",
+        "upgrade": "检查更新",
+        "downloading": "下载中...",
+        "about": "关于",
+        "file": "文件",
+        "newFile": "新建文件",
+        "save": "保存",
+        "saveAs": "另存为..."
+    },
+    "dialog":{
+        "title": "提示",
+        "confirm": "确定",
+        "cancel": "取消"
+    },
+    "upgrade":{
+        "noUpdate": "当前已经是最新版本",
+        "update": "检查到新版本，是否更新？",
+        "downloaded": "下载完成，是否立即安装？"
+    }
+}
