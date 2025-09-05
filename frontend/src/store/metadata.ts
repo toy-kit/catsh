@@ -5,6 +5,7 @@ import { SaveConf } from "../../wailsjs/go/main/App"
 export const useMetadataStore = defineStore('Metadata', {
     state: () => ({
         wails_config: {
+            name: "",
             homepage: "",
             repository: "",
         },

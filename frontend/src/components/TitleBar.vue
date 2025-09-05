@@ -38,43 +38,10 @@ const handleHelpSelect = (value: string) => {
 
 <template>
     <div class="flex items-center titlebar-h z-50">
-        <div class="ml-2 mr-1.5">
-            <img src="../assets/images/logo.svg" class="w-4.5 h-4.5" />
+        <div class="ml-2 mr-1.5 drag">
+            <img src="../assets/images/logo.svg" class="w-5.5 h-5.5" />
         </div>
-        <a-dropdown @select="handleSelect" position="bl">
-            <a-button type='text' class="!px-2">{{ $t('titlebar.file') }}</a-button>
-            <template #content>
-                <a-doption>{{ $t('titlebar.newFile') }}</a-doption>
-                <a-divider class="!my-1" />
-                <a-doption>{{ $t('titlebar.save') }}</a-doption>
-                <a-doption>{{ $t('titlebar.saveAs') }}</a-doption>
-            </template>
-        </a-dropdown>
-        <a-dropdown @select="metadataStore.changeTheme" position="bl">
-            <a-button type='text' class="!px-2">{{ $t('titlebar.theme') }}</a-button>
-            <template #content>
-                <a-doption value="light">{{ $t('titlebar.light') }}</a-doption>
-                <a-doption value="dark">{{ $t('titlebar.dark') }}</a-doption>
-            </template>
-        </a-dropdown>
-        <a-dropdown @select="metadataStore.changeLocale" position="bl">
-            <a-button type='text' class="!px-2">{{ $t('titlebar.language') }}</a-button>
-            <template #content>
-                <a-doption value="zh">中文</a-doption>
-                <a-doption value="en">English</a-doption>
-            </template>
-        </a-dropdown>
-        <a-dropdown @select="handleHelpSelect" position="bl">
-            <a-button type='text' class="!px-2">{{ $t('titlebar.help') }}</a-button>
-            <template #content>
-                <a-doption value="docs">{{ $t('titlebar.docs') }}</a-doption>
-                <a-doption value="repository">{{ $t('titlebar.repository') }}</a-doption>
-                <a-divider class="!my-1" />
-                <a-doption value="upgrade">{{ downloading ? $t('titlebar.downloading') : $t('titlebar.upgrade') }}</a-doption>
-                <a-divider class="!my-1" />
-                <a-doption value="about">{{ $t('titlebar.about') }}</a-doption>
-            </template>
-        </a-dropdown>
+        <div class="drag text-sm font-medium">{{ metadataStore.wails_config.name }}</div>
         <div class="flex-1 h-full drag"></div>
         <a-button @click="runtime.WindowMinimise()" type='text' class="!px-5 titlebar-h" :title="$t('titlebar.minimise')">
             <template #icon>

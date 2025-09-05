@@ -1,12 +1,12 @@
 package main
 
 import (
+	"catsh/global"
+	"catsh/service/config"
+	"catsh/service/upgrade"
 	"embed"
 	"encoding/json"
 	"os"
-	"catsh/global"
-	"catsh/internal/config"
-	"catsh/internal/upgrade"
 
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/options"

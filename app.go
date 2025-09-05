@@ -1,12 +1,12 @@
 package main
 
 import (
-	"context"
 	"catsh/global"
-	"catsh/internal/config"
-	"catsh/internal/locale"
-	"catsh/internal/upgrade"
+	"catsh/service/config"
+	"catsh/service/locale"
+	"catsh/service/upgrade"
 	"catsh/types"
+	"context"
 
 	"github.com/wailsapp/wails/v2/pkg/runtime"
 )

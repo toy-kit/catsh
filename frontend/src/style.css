@@ -14,7 +14,7 @@ body {
 }
 
 .body-h {
-    height: calc(100vh - var(--spacing) * 9);
+    height: calc(100vh - var(--spacing) * 16);
 }
 
 .drag {
@@ -35,4 +35,26 @@ body {
 
 .arco-dropdown-option {
     line-height: 1.75rem !important;
+}
+
+.arco-tabs-left .arco-tabs-nav-vertical {
+    margin-top: 7px;
+    height: calc(100% - 7px) !important;
+    margin-right: -1px;
+}
+
+.arco-tabs-left .arco-tabs-content {
+    border-top: 1px solid var(--color-neutral-3);
+    border-left: 1px solid var(--color-neutral-3);
+    border-top-left-radius: 7px;
+    background: var(--color-bg-3);
+    padding-left: 0 !important;
+}
+
+.arco-tabs-left .arco-tabs-nav-extra {
+    width: 100%;
+}
+
+.border-color {
+    border-color: var(--color-neutral-2);
 }
