@@ -6,5 +6,6 @@ export {
     AppConfigInfo,
     AppConfigRepository,
     AppData,
-    Config
+    Config,
+    WindowOptions
 } from "./models.js";

@@ -16,3 +16,58 @@ body {
 .no-drag {
     --wails-draggable: no-drag
 }
+
+.titlebar-h {
+    height: calc(var(--spacing) * 8) !important;
+}
+
+.body-h {
+    height: calc(100vh - var(--spacing) * 8);
+}
+
+.arco-btn-status-normal {
+    color: var(--color-text-1) !important;
+}
+
+.border-color {
+    border-color: var(--color-neutral-2);
+}
+
+.arco-scrollbar-track-direction-vertical {
+    width: 0.75rem !important;
+}
+
+.arco-scrollbar-thumb-bar {
+    width: 0.45rem !important;
+    margin: 0 0 0 0.25rem !important;
+}
+
+.form-item-right .arco-form-item-content-flex {
+    justify-content: flex-end;
+}
+
+.arco-dropdown-option {
+    line-height: 1.75rem !important;
+}
+.arco-switch-type-round.arco-switch-small {
+    min-width: 34px !important;
+    height: 18px !important;
+    line-height: 18px !important;
+}
+.arco-switch-small .arco-switch-handle {
+    width: 14px !important;
+    height: 14px !important;
+}
+.arco-switch-small.arco-switch-checked .arco-switch-handle {
+    left: calc(100% - 14px - 2px) !important;
+}
+.arco-select-view-single .arco-select-view-suffix
+ {
+    padding-left: 6px !important;
+}
+.arco-select-view-single{
+    padding-right: 6px !important;
+}
+.arco-list-item{
+    padding: 3px 20px !important;
+}

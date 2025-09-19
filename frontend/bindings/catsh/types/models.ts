@@ -118,6 +118,7 @@ export class AppConfigRepository {
 export class AppData {
     "app_config": AppConfig;
     "config": Config;
+    "window_options": WindowOptions;
     "locales": { [_: string]: { [_: string]: any } };
 
     /** Creates a new AppData instance. */
@@ -127,6 +128,9 @@ export class AppData {
         }
         if (!("config" in $$source)) {
             this["config"] = (new Config());
+        }
+        if (!("window_options" in $$source)) {
+            this["window_options"] = (new WindowOptions());
         }
         if (!("locales" in $$source)) {
             this["locales"] = {};
@@ -141,7 +145,8 @@ export class AppData {
     static createFrom($$source: any = {}): AppData {
         const $$createField0_0 = $$createType2;
         const $$createField1_0 = $$createType3;
-        const $$createField2_0 = $$createType5;
+        const $$createField2_0 = $$createType4;
+        const $$createField3_0 = $$createType6;
         let $$parsedSource = typeof $$source === 'string' ? JSON.parse($$source) : $$source;
         if ("app_config" in $$parsedSource) {
             $$parsedSource["app_config"] = $$createField0_0($$parsedSource["app_config"]);
@@ -149,8 +154,11 @@ export class AppData {
         if ("config" in $$parsedSource) {
             $$parsedSource["config"] = $$createField1_0($$parsedSource["config"]);
         }
+        if ("window_options" in $$parsedSource) {
+            $$parsedSource["window_options"] = $$createField2_0($$parsedSource["window_options"]);
+        }
         if ("locales" in $$parsedSource) {
-            $$parsedSource["locales"] = $$createField2_0($$parsedSource["locales"]);
+            $$parsedSource["locales"] = $$createField3_0($$parsedSource["locales"]);
         }
         return new AppData($$parsedSource as Partial<AppData>);
     }
@@ -184,10 +192,60 @@ export class Config {
     }
 }
 
+export class WindowOptions {
+    "name": string;
+    "title": string;
+    "width": number;
+    "height": number;
+    "min_width": number;
+    "min_height": number;
+    "resizable": boolean;
+    "url": string;
+
+    /** Creates a new WindowOptions instance. */
+    constructor($$source: Partial<WindowOptions> = {}) {
+        if (!("name" in $$source)) {
+            this["name"] = "";
+        }
+        if (!("title" in $$source)) {
+            this["title"] = "";
+        }
+        if (!("width" in $$source)) {
+            this["width"] = 0;
+        }
+        if (!("height" in $$source)) {
+            this["height"] = 0;
+        }
+        if (!("min_width" in $$source)) {
+            this["min_width"] = 0;
+        }
+        if (!("min_height" in $$source)) {
+            this["min_height"] = 0;
+        }
+        if (!("resizable" in $$source)) {
+            this["resizable"] = false;
+        }
+        if (!("url" in $$source)) {
+            this["url"] = "";
+        }
+
+        Object.assign(this, $$source);
+    }
+
+    /**
+     * Creates a new WindowOptions instance from a string or object.
+     */
+    static createFrom($$source: any = {}): WindowOptions {
+        let $$parsedSource = typeof $$source === 'string' ? JSON.parse($$source) : $$source;
+        return new WindowOptions($$parsedSource as Partial<WindowOptions>);
+    }
+}
+
 // Private type creation functions
 const $$createType0 = AppConfigInfo.createFrom;
 const $$createType1 = AppConfigRepository.createFrom;
 const $$createType2 = AppConfig.createFrom;
 const $$createType3 = Config.createFrom;
-const $$createType4 = $Create.Map($Create.Any, $Create.Any);
-const $$createType5 = $Create.Map($Create.Any, $$createType4);
+const $$createType4 = WindowOptions.createFrom;
+const $$createType5 = $Create.Map($Create.Any, $Create.Any);
+const $$createType6 = $Create.Map($Create.Any, $$createType5);

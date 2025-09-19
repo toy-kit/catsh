@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import i18n from '../utils/locales'
 import { SaveConfig } from "../../bindings/catsh/service/appdataservice"
-import {AppConfig, Config, AppConfigInfo, AppConfigRepository} from "../../bindings/catsh/types/models";
+import {AppConfig, Config, AppConfigInfo, AppConfigRepository, WindowOptions} from "../../bindings/catsh/types/models";
 
 export const useAppDataStore = defineStore('AppData', {
     state: () => ({
@@ -10,6 +10,7 @@ export const useAppDataStore = defineStore('AppData', {
             repository: {} as AppConfigRepository,
             os: "",
         },
+        window_options: {} as WindowOptions,
         config: {
             locale: "zh",
             theme: "light",
@@ -45,6 +46,9 @@ export const useAppDataStore = defineStore('AppData', {
         },
         setAppConfig(value: AppConfig) {
             this.app_config = value;
+        },
+        setWindowOptions(value: WindowOptions) {
+            this.window_options = value;
         },
         setResize(value: any){
             this.resize = value;

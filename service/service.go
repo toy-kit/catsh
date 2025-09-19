@@ -1,6 +1,7 @@
 package service
 
 import (
+	"catsh/global"
 	"catsh/internal/locale"
 
 	"github.com/wailsapp/wails/v3/pkg/application"
@@ -11,6 +12,7 @@ func NewService() []application.Service {
 	return []application.Service{
 		application.NewService(&AppDataService{}),
 		application.NewService(&UpgradeService{}),
+		application.NewService(&WindowService{}),
 	}
 }
 
@@ -19,6 +21,7 @@ func Alert(message string) {
 	dialog.SetTitle(locale.T("dialog.title"))
 	dialog.SetIcon(icons.ApplicationDarkMode256)
 	dialog.SetMessage(message)
+	dialog.AttachToWindow(global.WindowManager.Current())
 	dialog.Show()
 }
 

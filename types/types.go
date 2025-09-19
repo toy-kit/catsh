@@ -34,9 +34,21 @@ type Config struct {
 }
 
 type AppData struct {
-	AppConfig AppConfig                 `json:"app_config"`
-	Config    Config                    `json:"config"`
-	Locales   map[string]map[string]any `json:"locales"`
+	AppConfig     AppConfig                 `json:"app_config"`
+	Config        Config                    `json:"config"`
+	WindowOptions WindowOptions             `json:"window_options"`
+	Locales       map[string]map[string]any `json:"locales"`
+}
+
+type WindowOptions struct {
+	Name      string `json:"name"`
+	Title     string `json:"title"`
+	Width     int    `json:"width"`
+	Height    int    `json:"height"`
+	MinWidth  int    `json:"min_width"`
+	MinHeight int    `json:"min_height"`
+	Resizable bool   `json:"resizable"`
+	URL       string `json:"url"`
 }
 
 type Database struct {

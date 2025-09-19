@@ -10,10 +10,12 @@ import (
 type AppDataService struct{}
 
 func (s *AppDataService) Load() types.AppData {
+	current := global.WindowManager.Current()
 	return types.AppData{
-		AppConfig: global.AppConfig,
-		Config:    global.Cfg,
-		Locales:   locale.GetLocales(),
+		AppConfig:     global.AppConfig,
+		Config:        global.Cfg,
+		Locales:       locale.GetLocales(),
+		WindowOptions: global.WindowOptions[current.Name()],
 	}
 }
 

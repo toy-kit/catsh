@@ -1,8 +1,14 @@
 package global
 
-import "catsh/types"
+import (
+	"catsh/types"
+
+	"github.com/wailsapp/wails/v3/pkg/application"
+)
 
 var (
-	AppConfig types.AppConfig
-	Cfg       types.Config
+	WindowManager *application.WindowManager
+	WindowOptions = make(map[string]types.WindowOptions)
+	AppConfig     types.AppConfig
+	Cfg           types.Config
 )

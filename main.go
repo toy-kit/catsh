@@ -6,6 +6,7 @@ import (
 	"catsh/internal/locale"
 	"catsh/internal/upgrade"
 	"catsh/service"
+	"catsh/types"
 	"embed"
 	"log"
 	"os"
@@ -29,12 +30,6 @@ var appConfig []byte
 
 //go:embed all:locales
 var locales embed.FS
-
-// theme background color
-var bgColor = map[string][]uint8{
-	"light": {255, 255, 255, 1},
-	"dark":  {23, 23, 26, 1},
-}
 
 // main function serves as the application's entry point. It initializes the application, creates a window,
 // and starts a goroutine that emits a time-based event every second. It subsequently runs the application and
@@ -64,9 +59,6 @@ func main() {
 		println("Error:", err.Error())
 	}
 
-	// get background color
-	rgba := bgColor[global.Cfg.Theme]
-
 	// Create a new Wails application by providing the necessary options.
 	// Variables 'Name' and 'Description' are for application metadata.
 	// 'Assets' configures the asset server with the 'FS' variable pointing to the frontend files.
@@ -82,28 +74,35 @@ func main() {
 		Mac: application.MacOptions{
 			ApplicationShouldTerminateAfterLastWindowClosed: true,
 		},
+		SingleInstance: &application.SingleInstanceOptions{
+			UniqueID: "com.lufuhu.catsh",
+			OnSecondInstanceLaunch: func(data application.SecondInstanceData) {
+				// Focus the window if needed
+				if mainWindow, ok := global.WindowManager.GetByName("main"); ok {
+					mainWindow.Restore()
+					mainWindow.Focus()
+				}
+			},
+		},
 	})
+
+	global.WindowManager = app.Window
 
 	// Create a new window with the necessary options.
 	// 'Title' is the title of the window.
 	// 'Mac' options tailor the window when running on macOS.
 	// 'BackgroundColour' is the background colour of the window.
 	// 'URL' is the URL that will be loaded into the webview.
-	app.Window.NewWithOptions(application.WebviewWindowOptions{
+	windowService := service.WindowService{}
+	windowService.NewWindow(types.WindowOptions{
+		Name:      "main",
 		Title:     "Catsh",
 		Width:     900,
 		Height:    650,
 		MinWidth:  800,
 		MinHeight: 600,
-		Frameless: true,
-		Mac: application.MacWindow{
-			InvisibleTitleBarHeight: 50,
-			Backdrop:                application.MacBackdropTranslucent,
-			TitleBar:                application.MacTitleBarHiddenInset,
-		},
-		BackgroundColour:         application.NewRGBA(rgba[0], rgba[1], rgba[2], rgba[3]),
-		URL:                      "/",
-		ContentProtectionEnabled: true,
+		URL:       "/",
+		Resizable: true,
 	})
 
 	// Create a goroutine that emits an event containing the current time every second.

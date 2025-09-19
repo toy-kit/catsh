@@ -3,7 +3,9 @@
 
 import * as AppDataService from "./appdataservice.js";
 import * as UpgradeService from "./upgradeservice.js";
+import * as WindowService from "./windowservice.js";
 export {
     AppDataService,
-    UpgradeService
+    UpgradeService,
+    WindowService
 };
