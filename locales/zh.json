@@ -1,0 +1,34 @@
+{
+    "title": "Catsh",
+    "description": "通用的终端工具，适用于ssh、ftp、50多种数据库，支持命令片段、自动任务、操作录像。",
+    "titlebar": {
+        "setting": "设置",
+        "minimise": "最小化",
+        "maximize": "最大化",
+        "close": "关闭",
+        "language": "语言",
+        "theme": "主题",
+        "light": "亮色模式",
+        "dark": "暗黑模式",
+        "help": "帮助",
+        "docs": "文档",
+        "repository": "仓库",
+        "upgrade": "检查更新",
+        "downloading": "下载中...",
+        "about": "关于",
+        "file": "文件",
+        "newFile": "新建文件",
+        "save": "保存",
+        "saveAs": "另存为..."
+    },
+    "dialog":{
+        "title": "提示",
+        "confirm": "确定",
+        "cancel": "取消"
+    },
+    "upgrade":{
+        "noUpdate": "当前已经是最新版本",
+        "update": "检查到新版本，是否更新？",
+        "downloaded": "下载完成，是否立即安装？"
+    }
+}

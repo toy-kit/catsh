@@ -1,0 +1,15 @@
+{
+	"fixed": {
+		"file_version": "0.0.1"
+	},
+	"info": {
+		"0000": {
+			"ProductVersion": "0.0.1",
+			"CompanyName": "TOY-KIT",
+			"FileDescription": "Universal terminal tools",
+			"LegalCopyright": "Copyright (c) 2025 TOY-KIT",
+			"ProductName": "Catsh",
+			"Comments": "Convenient terminal tools"
+		}
+	}
+}

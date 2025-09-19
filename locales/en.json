@@ -1,0 +1,34 @@
+{
+    "title": "Catsh",
+    "description": "Universal terminal tools, applicable to SSH, FTP, over 50 types of databases, supporting command fragments, automatic tasks, operation recordings.",
+    "titlebar": {
+        "setting": "Setting",
+        "minimise": "Minimise",
+        "maximize": "Maximize",
+        "close": "Close",
+        "language": "Language",
+        "theme": "Theme",
+        "light": "Light",
+        "dark": "Dark",
+        "help": "Help",
+        "docs": "Document",
+        "repository": "Repository",
+        "upgrade": "Check Upgrade",
+        "downloading": "Downloading...",
+        "about": "About",
+        "file": "File",
+        "newFile": "New File",
+        "save": "Save",
+        "saveAs": "Save As..."
+    },
+    "dialog": {
+        "title": "Message",
+        "confirm": "Confirm",
+        "cancel": "Cancel"
+    },
+    "upgrade":{
+        "noUpdate": "No new version was detected.",
+        "update": "Have you checked for the new version and updated it?",
+        "downloaded": "Download complete. Do you want to install it immediately?"
+    }
+}
