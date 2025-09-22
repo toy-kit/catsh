@@ -10,7 +10,7 @@ info:
   description: "Universal terminal tools" # The application description
   copyright: "Copyright (c) 2025 TOY-KIT" # Copyright text
   comments: "Convenient terminal tools" # Comments
-  version: "0.0.1" # The application version
+  version: "0.0.2" # The application version
 
 repository:
   author: "lufuhu"

@@ -10,11 +10,11 @@
         <key>CFBundleIdentifier</key>
             <string>catsh</string>
         <key>CFBundleVersion</key>
-            <string>0.0.1</string>
+            <string>0.0.2</string>
         <key>CFBundleGetInfoString</key>
             <string>Convenient terminal tools</string>
         <key>CFBundleShortVersionString</key>
-            <string>0.0.1</string>
+            <string>0.0.2</string>
         <key>CFBundleIconFile</key>
             <string>icons</string>
         <key>LSMinimumSystemVersion</key>
