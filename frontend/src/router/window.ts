@@ -10,3 +10,13 @@ export const ToSetting = () => {
         resizable: false,
     }))
 }
+export const ToAbout = () => {
+    NewWindow(new WindowOptions({
+        name: "about",
+        title: '设置',
+        url: '/about',
+        width: 400,
+        height: 450,
+        resizable: false,
+    }))
+}

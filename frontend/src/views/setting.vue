@@ -5,13 +5,8 @@ import TitleBar from '../components/TitleBar.vue';
 <template>
   <div class="w-screen h-screen fixed">
     <TitleBar />
-    <a-scrollbar class="overflow-y-auto body-h">
-      <a-list>
-        <a-list-item class="!py-3">
-          <a-typography-text type="secondary">
-            基础
-          </a-typography-text>
-        </a-list-item>
+    <a-scrollbar class="overflow-y-auto body-h py-3">
+      <a-list class="mx-4 mb-5">
         <a-list-item>
           <a-list-item-meta :title="$t('titlebar.theme')">
             <template #avatar>
@@ -38,11 +33,8 @@ import TitleBar from '../components/TitleBar.vue';
             </a-select>
           </template>
         </a-list-item>
-        <a-list-item class="!py-3">
-          <a-typography-text type="secondary">
-            窗口
-          </a-typography-text>
-        </a-list-item>
+      </a-list>
+      <a-list class="mx-4 mb-5">
         <a-list-item>
           <a-list-item-meta title="开机时自动启动">
             <template #avatar>
@@ -63,11 +55,8 @@ import TitleBar from '../components/TitleBar.vue';
             <a-switch type="round" />
           </template>
         </a-list-item>
-        <a-list-item class="!py-3">
-          <a-typography-text type="secondary">
-            更新
-          </a-typography-text>
-        </a-list-item>
+      </a-list>
+      <a-list class="mx-4 mb-5">
         <a-list-item>
           <a-list-item-meta title="更新源">
             <template #avatar>

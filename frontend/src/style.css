@@ -29,6 +29,10 @@ body {
     color: var(--color-text-1) !important;
 }
 
+.arco-link-status-normal {
+    color: var(--color-text-1) !important;
+}
+
 .border-color {
     border-color: var(--color-neutral-2);
 }
