@@ -18,11 +18,11 @@ body {
 }
 
 .titlebar-h {
-    height: calc(var(--spacing) * 8) !important;
+    height: calc(var(--spacing) * 9) !important;
 }
 
 .body-h {
-    height: calc(100vh - var(--spacing) * 8);
+    height: calc(100vh - var(--spacing) * 9);
 }
 
 .arco-btn-status-normal {
@@ -34,11 +34,11 @@ body {
 }
 
 .border-color {
-    border-color: var(--color-neutral-2);
+    border-color: rgb(var(--gray-3));
 }
 
 .arco-scrollbar-track-direction-vertical {
-    width: 0.75rem !important;
+    width: 0.6rem !important;
 }
 
 .arco-scrollbar-thumb-bar {
@@ -53,25 +53,49 @@ body {
 .arco-dropdown-option {
     line-height: 1.75rem !important;
 }
+
 .arco-switch-type-round.arco-switch-small {
     min-width: 34px !important;
     height: 18px !important;
     line-height: 18px !important;
 }
+
 .arco-switch-small .arco-switch-handle {
     width: 14px !important;
     height: 14px !important;
 }
+
 .arco-switch-small.arco-switch-checked .arco-switch-handle {
     left: calc(100% - 14px - 2px) !important;
 }
-.arco-select-view-single .arco-select-view-suffix
- {
+
+.arco-select-view-single .arco-select-view-suffix {
     padding-left: 6px !important;
 }
-.arco-select-view-single{
+
+.arco-select-view-single {
     padding-right: 6px !important;
 }
-.arco-list-item{
+
+.arco-list-item {
     padding: 3px 20px !important;
+}
+
+.body-tabs .arco-tabs-nav {
+    position: fixed;
+    top: 0;
+    width: calc(100vw - var(--spacing) * 31.5);
+    height: var(--spacing) * 9 !important;
+}
+
+.body-tabs .arco-tabs-nav .arco-tabs-nav-tab {
+    --wails-draggable: drag
+}
+
+.body-tabs .arco-tabs-nav .arco-tabs-nav-tab-list {
+    --wails-draggable: no-drag
+}
+
+.body-tabs .arco-tabs-content{
+    padding-top: 0 !important;
 }

@@ -4,7 +4,7 @@ export const ToSetting = () => {
     NewWindow(new WindowOptions({
         name: "setting",
         title: '设置',
-        url: '/setting',
+        url: '/#/setting',
         width: 435,
         height: 475,
         resizable: false,
@@ -14,7 +14,7 @@ export const ToAbout = () => {
     NewWindow(new WindowOptions({
         name: "about",
         title: '设置',
-        url: '/about',
+        url: '/#/about',
         width: 400,
         height: 450,
         resizable: false,

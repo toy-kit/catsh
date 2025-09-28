@@ -66,7 +66,7 @@ func main() {
 	// 'Mac' options tailor the application when running an macOS.
 	app := application.New(application.Options{
 		Name:        "Catsh",
-		Description: "Universal terminal tools",
+		Description: "Catsh",
 		Services:    service.NewService(),
 		Assets: application.AssetOptions{
 			Handler: application.AssetFileServerFS(assets),

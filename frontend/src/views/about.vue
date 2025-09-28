@@ -8,15 +8,15 @@ const appDataStore = useAppDataStore();
 
 <template>
     <div class="w-screen h-screen fixed">
-        <TitleBar />
+        <TitleBar icon="about" title="关于" :maximize="false" />
         <div class="body-h flex flex-col drag">
             <div class="flex-1 h-0 flex items-center justify-center">
                 <div class="text-center no-drag">
                     <img src="../assets/logo.svg" class="w-17 h-17 mx-auto" />
-                    <div class="text-base font-bold my-2">{{ appDataStore.app_config.info.productName }}</div>
+                    <div class="text-base font-bold my-2">Catsh</div>
                 </div>
             </div>
-            <div class="flex items-center justify-center mb-4 no-drag">
+            <div class="flex items-center justify-center mb-6 no-drag">
                 <a-form auto-label-width class="!w-auto">
                     <a-form-item label="版本" class="!mb-1.5">
                         <div class="flex items-center gap-6">

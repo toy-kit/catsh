@@ -4,7 +4,7 @@ import TitleBar from '../components/TitleBar.vue';
 
 <template>
   <div class="w-screen h-screen fixed">
-    <TitleBar />
+    <TitleBar icon="setting" title="设置" :maximize="false" />
     <a-scrollbar class="overflow-y-auto body-h py-3">
       <a-list class="mx-4 mb-5">
         <a-list-item>

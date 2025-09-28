@@ -22,7 +22,7 @@ tasks:
     deps:
       - task: "{{OS}}:build"
         vars:
-          APP_NAME: "{{.APP_NAME}}-{{OS}}"
+          APP_NAME: "{{.APP_NAME}}"
           BIN_DIR: "{{.BIN_DIR}}/releases"
           PRODUCTION: "true"
 
